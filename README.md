@@ -18,7 +18,7 @@ sudo apt-get install -y g++ libpqxx-dev libpq-dev make
 
 ## Сборка
 
-Из папки `3Sem_6Lab`:
+Из папки `6Lab`:
 
 ```bash
 make
