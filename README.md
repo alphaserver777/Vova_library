@@ -80,6 +80,22 @@ docker compose run --rm app
 
 Такой режим удобен, если нужно периодически заходить в меню и не держать приложение постоянно запущенным.
 
+### Если не работает `docker-compose`
+
+На некоторых системах установлен устаревший `docker-compose` (v1 на Python), который падает с ошибкой `distutils`.
+Рекомендуется использовать новый Compose v2:
+
+```bash
+docker compose up --build
+```
+
+Если у вас есть только `docker-compose`, попробуйте установить плагин:
+
+```bash
+sudo apt-get update
+sudo apt-get install -y docker-compose-plugin
+```
+
 ## Как подключиться к БД и работать с ней
 
 Параметры подключения (из `docker-compose.yml`):
